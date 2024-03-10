@@ -222,7 +222,7 @@ a.link {
 
 a.link:hover,button:hover {
     background: #fff6;
-    font-family: "JetBrains Mono SemiBold";
+    font-weight: bold;
     color: #6400c2
 }
 

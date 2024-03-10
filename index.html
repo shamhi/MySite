@@ -1,55 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ShamHi</title>
-    <meta property="og:description" content="ShamHi's main page">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico">
+    <head>
+        <meta charset="UTF-8">
+        <title>ShamHi</title>
+        <meta property="og:description" content="ShamHi's main page">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/ico">
+        <link rel="stylesheet" href="assets/vars.css">
+        <link rel="stylesheet" href="assets/css/index/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" type="text/javascript"></script>
+        <script src="assets/js/index/text.js"></script>
+        <script src="assets/js/index/typed.min.js" type="text/javascript"></script>
+    </head>
 
-    <link rel="stylesheet" href="assets/vars.css">
-    <link rel="stylesheet" href="assets/css/index/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" type="text/javascript"></script>
-    <script src="assets/js/index/text.js"></script>
-    <script src="assets/js/index/typed.min.js" type="text/javascript"></script>
-</head>
-
-<body class="center">
-
-    <div class="center">
-        <header class="center info">
-            <div class="center names">
-                <div class="avatar">
-                    <img id="ava" src="assets/images/ava.png" alt="test_alt" oncontextmenu="if (!window.__cfRLUnblockHandlers) return false; return false;" class="avatar">
-                </div>
-                <h2>
-                    ShamHi
-                </h2>
-                <hr>
-                <h3>
-                    <span class="typed"></span>
-                    <span class="typed-cursor"></span>
-                    <span class="typed-cursor"></span>
-                    <span class="typed-cursor"></span>
+    <body class="center">
+        <div id="donate" style="display: none;">
+            <div class="popup">
+                <h1 align="center">Donate</h1>
+                <p align="center"></p>
+                <h3 align="center">
+                    <span class="font-size=larger">
+                        Отправляя донат, вы поддерживаете автора и оплачиваете ему ужин.
+                    </span>
                 </h3>
+                <h2 align="center">Select payment method</h2>
+                <p align="center">
+                    <input type="button" class="btn" value="Tinkoff" onclick="location.href='https://www.tinkoff.ru/cf/1Vv8frh3GHQ';">
+                </p>
+                <p align="center">
+                    <input type="button" class="btn" value="Close" title="Close" onclick="document.getElementById('donate').style.display='none';">
+                </p>
+            </div>
+        </div>
+        <div class="center">
+            <header class="center info">
+                <div class="center names">
+                    <div class="avatar">
+                        <img id="ava" src="assets/images/ava.png" alt="test_alt" oncontextmenu="return false;" class="avatar">
+                    </div>
+                    <h2>
+                        ShamHi
+                    </h2>
+                    <hr>
+                    <h3>
+                        <span class="typed"></span>
+                        <span class="typed-cursor"></span>
+                        <span class="typed-cursor"></span>
+                        <span class="typed-cursor"></span>
+                    </h3>
+                    <hr>
+                    <h2>Links</h2>
+                </div>
+                <div class="buttons">
+                    <a href="javascript://" class="link" onclick="location.href='https://t.me/sho6ot'">
+                        Telegram
+                    </a>
+                    <a href="javascript://" class="link" onclick="location.href='https://github.com/shamhi'">
+                        Git
+                    </a>
+                </div>
                 <hr>
-                <h2>Links</h2>
-            </div>
-            <div class="buttons">
-                <a href="javascript://" class="link" onclick="if (window.__cfRLUnblockHandlers) return false; location.href='https://t.me/AlekGurov'">
-                    Telegram
-                </a>
-                <a href="javascript://" class="link" onclick="if (window.__cfRLUnblockHandlers) return false; location.href='https://github.com/shamhi'">
-                    Git
-                </a>
-            </div>
-            <hr>
-            <div class="center names"></div>
-            <div class="buttons"></div>
-        </header>
-    </div>
+                <div class="center names">
+                    <h2>Work</h2>
+                </div>
+                <div class="buttons">
+                    <a href="/projects" class="link">
+                        Projects
+                    </a>
+                    <a href="javascript://" class="link" onclick="document.getElementById('donate').style.display='block'">
+                        Donate
+                    </a>
+                </div>
+            </header>
+        </div>
 
-</body>
+    </body>
 </html>

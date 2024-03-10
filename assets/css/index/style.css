@@ -212,7 +212,6 @@ a.link {
     width: 10em;
     height: 10em;
     border-radius: 5.6em;
-    border: #8a2be2 solid 2px
 }
 
 .names {
@@ -223,6 +222,7 @@ a.link {
 
 a.link:hover,button:hover {
     background: #fff6;
+    font-family: "JetBrains Mono SemiBold";
     color: #6400c2
 }
 
@@ -268,7 +268,7 @@ h2 {
     -moz-transition: .2ms
 }
 
-#gitlink,#donate {
+#gitlink, #donate {
     position: fixed;
     top: 0;
     left: 0;
@@ -311,6 +311,7 @@ input[type=button] {
     -moz-tap-highlight-color: transparent;
     padding: 12px 20px;
     background: #730f7c;
+    font-family: raleway;
     color: #fff;
     border: 0;
     cursor: pointer;

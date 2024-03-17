@@ -16,63 +16,6 @@ body {
     font-family: play,sans-serif;
     font: play;
     animation: BgAnim 60s ease infinite;
-    -webkit-animation: BgAnim 60s ease infinite
-}
-
-@-webkit-keyframes BgAnim {
-    0% {
-        background-position: 2% 0%
-    }
-
-    50% {
-        background-position: 99% 100%
-    }
-
-    100% {
-        background-position: 2% 0%
-    }
-}
-
-@-moz-keyframes BgAnim {
-    0% {
-        background-position: 2% 0%
-    }
-
-    50% {
-        background-position: 99% 100%
-    }
-
-    100% {
-        background-position: 2% 0%
-    }
-}
-
-@-o-keyframes BgAnim {
-    0% {
-        background-position: 2% 0%
-    }
-
-    50% {
-        background-position: 99% 100%
-    }
-
-    100% {
-        background-position: 2% 0%
-    }
-}
-
-@-ms-keyframes BgAnim {
-    0% {
-        background-position: 2% 0%
-    }
-
-    50% {
-        background-position: 99% 100%
-    }
-
-    100% {
-        background-position: 2% 0%
-    }
 }
 
 @keyframes BgAnim {
@@ -97,40 +40,10 @@ body {
 .typed::after {
     content: '|';
     display: inline;
-    -webkit-animation: blink .7s infinite;
-    -moz-animation: blink .7s infinite;
     animation: blink .7s infinite
 }
 
 @keyframes blink {
-    0% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
-}
-
-@-webkit-keyframes blink {
-    0% {
-        opacity: 1
-    }
-
-    50% {
-        opacity: 0
-    }
-
-    100% {
-        opacity: 1
-    }
-}
-
-@-moz-keyframes blink {
     0% {
         opacity: 1
     }
@@ -163,11 +76,7 @@ body {
     padding: 35px;
     color: var(--text-color);
     border-radius: 16px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    -khtml-border-radius: 16px;
     backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
     box-shadow: 0 3px 12px 0 #3f383d
 }
 
@@ -177,23 +86,15 @@ body {
     display: flex;
     padding: 0;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px
 }
 
 a.link {
-    -webkit-tap-highlight-color: transparent;
-    -moz-tap-highlight-color: transparent;
     padding: 8px 20px;
     margin: 4px;
     background: var(--back-color);
     color: #fff;
     cursor: pointer;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
     width: 256px;
     text-align: center;
     text-decoration: none;
@@ -220,22 +121,14 @@ a.link {
     padding: .3em
 }
 
-a.link:hover,button:hover {
+a.link:hover, button:hover {
     background: #fff6;
     font-weight: bold;
     color: #6400c2
 }
 
-button:active,button:focus {
+button:active, button:focus {
     outline: none
-}
-
-button::-moz-focus-inner {
-    border: 0
-}
-
-button::-webkit-focus-inner {
-    border: 0
 }
 
 hr {
@@ -255,8 +148,6 @@ h3 {
     font-style: normal;
     font-weight: 400;
     transition: .2ms;
-    -webkit-transition: .2ms;
-    -moz-transition: .2ms
 }
 
 h2 {
@@ -264,8 +155,6 @@ h2 {
     font: raleway;
     font-size: larger;
     transition: .2ms;
-    -webkit-transition: .2ms;
-    -moz-transition: .2ms
 }
 
 #gitlink, #donate {
@@ -295,20 +184,12 @@ h2 {
     background: var(--over-color);
     color: var(--popup-text-color);
     z-index: 1000;
-    -webkit-border-radius: 14px;
-    -moz-border-radius: 14px;
-    -ms-border-radius: 14px;
     border-radius: 14px;
     font: product sans;
-    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
-    -moz-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
-    -ms-box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3);
     box-shadow: 0 15px 20px rgba(0,0,0,.22),0 19px 60px rgba(0,0,0,.3)
 }
 
 input[type=button] {
-    -webkit-tap-highlight-color: transparent;
-    -moz-tap-highlight-color: transparent;
     padding: 12px 20px;
     background: #730f7c;
     font-family: raleway;
@@ -316,9 +197,6 @@ input[type=button] {
     border: 0;
     cursor: pointer;
     border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -khtml-border-radius: 8px;
     margin-top: 5px;
     margin-left: 5px;
     margin-bottom: 2px
@@ -396,7 +274,7 @@ input[type=button]::-webkit-focus-inner {
     color: #fff;
 }
 
-a.nolink:active,a.nolink:hover,a.nolink {
+a.nolink:active, a.nolink:hover, a.nolink {
     font-family: raleway,sans-serif;
     font: raleway;
     text-decoration: none;

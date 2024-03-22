@@ -22,7 +22,7 @@ $(function (){
 
 $(document).ready(function () {
     $('.typed').typed({
-        strings: ["17 years old", "Fullstack Developer", "Action Equals Reaction", "Anti-Hacker", "Nukkutuk", "Mamluk", "Off yaaaa"],
+        strings: ["17 years old", "Fullstack Developer", "Anti-Hacker"],
         typeSpeed: 100,
         loop: true,
         cursorChat: "|",
